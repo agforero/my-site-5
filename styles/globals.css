@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css?family=Imbue|Krona+One|Azeret+Mono");
+
+:root {
+    --purple-1: #411159;
+    --purple-2: #541672;
+    --purple-3: #6E1E96;
+    --green-1: #45F69C;
+
+    --background-image-height: 30vh;
+    --background-image-width: 40vw;
+
+    background-color: var(--purple-1);
+}
+
+* {
+    color: var(--green-1);
+    font-family: 'Azeret Mono', 'Courier New', Courier, monospace;
+}
+
+.ff-imbue {
+    font-family: 'Imbue', 'Times New Roman', Times, serif;
+}
+
+.ff-krona-one {
+    font-family: 'Krona One', Arial, Helvetica, sans-serif;
+}
+
+.ff-azeret-mono {
+    font-family: 'Azeret Mono', 'Courier New', Courier, monospace;
+}
+
+a {
+    color: var(--green-1) !important;
+    padding: 0px 1px;
+}
+
+a:hover {
+    color: var(--purple-1) !important;
+    background-color: var(--green-1);
+    border-radius: 2px;
+    text-decoration: none;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    } to {
+        transform: rotate(360deg);
+    }
+}
+
+.slow-rotate {
+    animation: rotation 120s infinite linear;
+}
+
+.background-position {
+    z-index: 0 !important;
+    overflow: hidden;
+}
+
+.foreground-position {
+    z-index: 1;
+    position: relative;
+}
