@@ -4,7 +4,7 @@ import PixelatedRotatingImage from './PixelatedRotatingImage';
 export default function BackgroundImage() {
     const router = useRouter()
     const images = {
-        "/": "/question.png"
+        "/": "/house.png"
     }
     var bgImage = images[router.asPath]
     return <PixelatedRotatingImage imgPath={images[router.asPath]}/>
